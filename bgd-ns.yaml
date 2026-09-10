@@ -1,4 +1,4 @@
 apiVersion: v1
-kind: Namespace  # .
+kind: Namespace  # .3
 metadata:
   name: bgd

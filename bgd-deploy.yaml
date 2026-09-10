@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: bgd          #서비스의 라벨과 일치, matchLabes와 일치.
+        app: bgd          #서비스의 라벨과 일치, matchLabes와 일치.3
       creationTimestamp: null
     spec:
       containers:
