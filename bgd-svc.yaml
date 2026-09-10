@@ -10,6 +10,6 @@ spec:
   selector:     # 2. 목적지 지정 
     app: bgd
   ports:
-  - protocol: TCP      # 인터넷 통신 방식: TCP 프로토콜
+  - protocol: TCP      # 인터넷 통신 방식: TCP 프로토콜.
     port: 8080
     targetPort: 8080   # Pod 내부에서 열려있는 포트번호이며, 서비스가 받은 요청을 8080 포트로 토스한다.
