@@ -10,4 +10,4 @@ resources:
 images:
 - name: mrhwang/hello-app
   newName: mrhwang/hello-app
-  newTag: aeb9d63
+  newTag: bef60dd
