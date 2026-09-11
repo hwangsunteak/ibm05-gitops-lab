@@ -4,7 +4,8 @@ metadata:
   name: hello-app-svc
   namespace: hello-app
 spec:
-  type: NodePort #파드와 클라이언트 연결하기 위해 서비스가 노드포트 또는 로드발란스를 이용해서 url로 외부와 연결(로드발란서로 주어도 상관없다함)
+#파드와 클라이언트 연결하기 위해 서비스가 노드포트 또는 로드발란스를 이용해서 url로 외부와 연결(로드발란서로 주어도 상관없다함)
+  type: NodePort
   selector:
     app: hello-app
   ports:
