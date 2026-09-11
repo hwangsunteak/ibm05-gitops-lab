@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-	private static final String template = "Hello, %s!";
+	private static final String template = "Hello, %s! 설정대로 따라했음. 원리나 기술을 익히면될듯.";
 	private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/hello")
