@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-app
+  namespace: hello-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels: # 파드의 라벨과 일치해야함(템플레이트)
+      app: hello-app
+  template:
+    metadata:
+      labels:
+        app: hello-app #서비스의 라벨과 일치해야함
+    spec:
+      containers:
+      - name: hello-app
+        # Kustomize가 이 이미지 태그를 관리 엄청 중요함 커스터마이즈
+        # 본인의 도커 허브 사용자 이름으로 변경 (여기서 이미지란 도커허브리포지토리에 넣어놓은 개발자가 작성한 소스코드가 파드안에있는 컨테이너에 넣어야한다.) 배포가되면 도커 myhub에 생길거다.
+        image: mrhwang/hello-app:latest
+        ports:
+        - containerPort: 8080
+
+        
+    
